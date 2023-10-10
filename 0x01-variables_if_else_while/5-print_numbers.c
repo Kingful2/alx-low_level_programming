@@ -1,26 +1,24 @@
+
 #include <stdio.h>
-
-
+#include <unistd.h>
 /**
- * main - this is the program that prints the alphabet in lowercase
- *
- * Return: Always 0.
+ * main - Entry point
+ * Description: prints char below 10
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char letter;
+	int a;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-
+	for (a = 0; a < 10; a++)
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+		putchar(a + '0');
 	}
-
 	putchar('\n');
-
 	return (0);
 }
+
+
 
 
